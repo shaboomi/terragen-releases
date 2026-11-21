@@ -6,12 +6,14 @@ This repository holds TerraGen's installers. The source code is kept elsewhere.
 
 ## Download
 
-The latest version is **[TerraGen 0.3.0](https://github.com/shaboomi/terragen-releases/releases/tag/v0.3.0)**:
+The latest version is **[TerraGen 0.4.0](https://github.com/shaboomi/terragen-releases/releases/tag/v0.4.0)**:
 
 | Platform | Installer |
 |---|---|
-| Windows 10/11 (x64) | [TerraGen_0.3.0_x64-setup.exe](https://github.com/shaboomi/terragen-releases/releases/download/v0.3.0/TerraGen_0.3.0_x64-setup.exe) |
-| macOS (Apple silicon and Intel) | [TerraGen_0.3.0_universal.dmg](https://github.com/shaboomi/terragen-releases/releases/download/v0.3.0/TerraGen_0.3.0_universal.dmg) |
+| Windows 10/11 (x64) | [TerraGen_0.4.0_x64-setup.exe](https://github.com/shaboomi/terragen-releases/releases/download/v0.4.0/TerraGen_0.4.0_x64-setup.exe) |
+| macOS (Apple silicon and Intel) | [TerraGen_0.4.0_universal.dmg](https://github.com/shaboomi/terragen-releases/releases/download/v0.4.0/TerraGen_0.4.0_universal.dmg) |
+| Linux x64 (AppImage) | [TerraGen_0.4.0_amd64.AppImage](https://github.com/shaboomi/terragen-releases/releases/download/v0.4.0/TerraGen_0.4.0_amd64.AppImage) |
+| Linux x64 (.deb) | [TerraGen_0.4.0_amd64.deb](https://github.com/shaboomi/terragen-releases/releases/download/v0.4.0/TerraGen_0.4.0_amd64.deb) |
 
 Every release lists each file's SHA-256 in `SHA256SUMS.txt`. Earlier versions are on the [Releases](https://github.com/shaboomi/terragen-releases/releases) page.
 
@@ -21,6 +23,7 @@ The installers are **not yet code-signed**, so your operating system will show a
 
 - **Windows:** SmartScreen says "Windows protected your PC". Choose **More info → Run anyway**.
 - **macOS:** Gatekeeper blocks the app. Right-click TerraGen in Applications, choose **Open**, then choose **Open** again.
+- **Linux:** for the AppImage, make it executable (`chmod +x TerraGen_0.4.0_amd64.AppImage`) and run it; or install the .deb with your package manager. These builds are new and untested on real machines.
 
 All TerraGen versions so far are pre-releases.
 
@@ -37,7 +40,7 @@ Today's plotter workflow usually takes three to five separate tools. TerraGen do
 - **Machine control:** supports FluidNC and GRBL plotters, among others. TerraGen estimates plot times from motion planning, guides you through pen changes, can resume a plot after a failure, and runs calibration plots.
 - **Publish:** editions, signatures, title blocks, certificates of authenticity, proof sheets, framed mockups, CSV batch personalisation and costing.
 
-TerraGen never uses the network unless you allow it. Map and terrain data are fetched only after you confirm the request.
+TerraGen never uses the network unless you allow it. Map and terrain data are fetched only after you turn on online maps.
 
 ## Free and Pro
 
