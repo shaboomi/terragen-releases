@@ -6,24 +6,23 @@ This repository holds TerraGen's installers. The source code is kept elsewhere.
 
 ## Download
 
-The latest version is **[TerraGen 0.5.3](https://github.com/shaboomi/terragen-releases/releases/tag/v0.5.3)**:
+The latest version is **[TerraGen 0.5.5](https://github.com/shaboomi/terragen-releases/releases/tag/v0.5.5)**:
 
 | Platform | Installer |
 |---|---|
-| Windows 10/11 (x64) | [TerraGen_0.5.3_x64-setup.exe](https://github.com/shaboomi/terragen-releases/releases/download/v0.5.3/TerraGen_0.5.3_x64-setup.exe) |
-| macOS (Apple silicon and Intel) | [TerraGen_0.5.3_universal.dmg](https://github.com/shaboomi/terragen-releases/releases/download/v0.5.3/TerraGen_0.5.3_universal.dmg) |
-| Linux x64 (AppImage) | [TerraGen_0.5.3_amd64.AppImage](https://github.com/shaboomi/terragen-releases/releases/download/v0.5.3/TerraGen_0.5.3_amd64.AppImage) |
-| Linux x64 (.deb) | [TerraGen_0.5.3_amd64.deb](https://github.com/shaboomi/terragen-releases/releases/download/v0.5.3/TerraGen_0.5.3_amd64.deb) |
+| Windows 10/11 (x64) | [TerraGen_0.5.5_x64-setup.exe](https://github.com/shaboomi/terragen-releases/releases/download/v0.5.5/TerraGen_0.5.5_x64-setup.exe) |
+| macOS (Apple silicon and Intel) | [TerraGen_0.5.5_universal.dmg](https://github.com/shaboomi/terragen-releases/releases/download/v0.5.5/TerraGen_0.5.5_universal.dmg) |
+| Linux x64 (AppImage) | [TerraGen_0.5.5_amd64.AppImage](https://github.com/shaboomi/terragen-releases/releases/download/v0.5.5/TerraGen_0.5.5_amd64.AppImage) |
+| Linux x64 (.deb) | [TerraGen_0.5.5_amd64.deb](https://github.com/shaboomi/terragen-releases/releases/download/v0.5.5/TerraGen_0.5.5_amd64.deb) |
 
 Every release lists each file's SHA-256 in `SHA256SUMS.txt`. Earlier versions are on the [Releases](https://github.com/shaboomi/terragen-releases/releases) page.
 
 ### First launch
 
-The installers are **not yet code-signed**, so your operating system will show a warning the first time you run TerraGen:
+The macOS app is signed and notarised by Apple and opens normally. The Windows and Linux installers are **not yet code-signed**:
 
 - **Windows:** SmartScreen says "Windows protected your PC". Choose **More info → Run anyway**.
-- **macOS:** Gatekeeper blocks the app. Right-click TerraGen in Applications, choose **Open**, then choose **Open** again.
-- **Linux:** for the AppImage, make it executable (`chmod +x TerraGen_0.5.3_amd64.AppImage`) and run it; or install the .deb with your package manager. These builds are new and untested on real machines.
+- **Linux:** for the AppImage, make it executable (`chmod +x TerraGen_0.5.5_amd64.AppImage`) and run it; or install the .deb with your package manager. These builds are new and untested on real machines.
 
 All TerraGen versions so far are pre-releases.
 
