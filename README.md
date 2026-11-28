@@ -6,14 +6,14 @@ This repository holds TerraGen's installers. The source code is kept elsewhere.
 
 ## Download
 
-The latest version is **[TerraGen 0.5.5](https://github.com/shaboomi/terragen-releases/releases/tag/v0.5.5)**:
+The latest version is **[TerraGen 0.5.6](https://github.com/shaboomi/terragen-releases/releases/tag/v0.5.6)**:
 
 | Platform | Installer |
 |---|---|
-| Windows 10/11 (x64) | [TerraGen_0.5.5_x64-setup.exe](https://github.com/shaboomi/terragen-releases/releases/download/v0.5.5/TerraGen_0.5.5_x64-setup.exe) |
-| macOS (Apple silicon and Intel) | [TerraGen_0.5.5_universal.dmg](https://github.com/shaboomi/terragen-releases/releases/download/v0.5.5/TerraGen_0.5.5_universal.dmg) |
-| Linux x64 (AppImage) | [TerraGen_0.5.5_amd64.AppImage](https://github.com/shaboomi/terragen-releases/releases/download/v0.5.5/TerraGen_0.5.5_amd64.AppImage) |
-| Linux x64 (.deb) | [TerraGen_0.5.5_amd64.deb](https://github.com/shaboomi/terragen-releases/releases/download/v0.5.5/TerraGen_0.5.5_amd64.deb) |
+| Windows 10/11 (x64) | [TerraGen_0.5.6_x64-setup.exe](https://github.com/shaboomi/terragen-releases/releases/download/v0.5.6/TerraGen_0.5.6_x64-setup.exe) |
+| macOS (Apple silicon and Intel) | [TerraGen_0.5.6_universal.dmg](https://github.com/shaboomi/terragen-releases/releases/download/v0.5.6/TerraGen_0.5.6_universal.dmg) |
+| Linux x64 (AppImage) | [TerraGen_0.5.6_amd64.AppImage](https://github.com/shaboomi/terragen-releases/releases/download/v0.5.6/TerraGen_0.5.6_amd64.AppImage) |
+| Linux x64 (.deb) | [TerraGen_0.5.6_amd64.deb](https://github.com/shaboomi/terragen-releases/releases/download/v0.5.6/TerraGen_0.5.6_amd64.deb) |
 
 Every release lists each file's SHA-256 in `SHA256SUMS.txt`. Earlier versions are on the [Releases](https://github.com/shaboomi/terragen-releases/releases) page.
 
@@ -22,7 +22,7 @@ Every release lists each file's SHA-256 in `SHA256SUMS.txt`. Earlier versions ar
 The macOS app is signed and notarised by Apple and opens normally. The Windows and Linux installers are **not yet code-signed**:
 
 - **Windows:** SmartScreen says "Windows protected your PC". Choose **More info → Run anyway**.
-- **Linux:** for the AppImage, make it executable (`chmod +x TerraGen_0.5.5_amd64.AppImage`) and run it; or install the .deb with your package manager. These builds are new and untested on real machines.
+- **Linux:** for the AppImage, make it executable (`chmod +x TerraGen_0.5.6_amd64.AppImage`) and run it; or install the .deb with your package manager. These builds are new and untested on real machines.
 
 All TerraGen versions so far are pre-releases.
 
@@ -38,6 +38,7 @@ Today's plotter workflow usually takes three to five separate tools. TerraGen do
 - **Maps and terrain:** draw streets, coastlines and ridgelines of a place you choose.
 - **Painting with a brush:** drive a plotter that holds a real brush and dips it in paint, with planned reloads, washes and drying waits, a painted preview and four paint styles. New in 0.5.0 and not yet run on a real machine.
 - **Layers like a drawing program:** each layer's pen as a coloured circle you click to change, layers added, renamed, merged and reordered by drag, a mask under its layer, groups, and the system's own menu bar with View ▸ Zoom. New in 0.5.1.
+- **Guides, grids and views:** pull guides out of the rulers, lay a grid over the page, and switch between Outline, Normal and Enhanced, which shows a metallic or gloss pen and a paint's sheen. Nothing in a view is plotted or exported. New in 0.5.6.
 - **Machine control:** supports FluidNC and GRBL plotters, among others. TerraGen estimates plot times from motion planning, guides you through pen changes, can resume a plot after a failure, and runs calibration plots. Connecting to a UUNA TEK over Wi-Fi or USB is more robust since 0.5.2, and 0.5.3 picks a Mac's USB port correctly (not yet tried on a real plotter).
 - **Publish:** editions, signatures, title blocks, certificates of authenticity, proof sheets, framed mockups, CSV batch personalisation and costing.
 
